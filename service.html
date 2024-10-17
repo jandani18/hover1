@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <STYLE>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+        }
+
+        .link-parent {
+            display: flex;
+            gap: 30px;
+        }
+
+        .hide {
+            display: none;
+
+        }
+
+        .show:hover .hide {
+            display: flex;
+            justify-content: space-between;
+
+            background-color: #f2f2f2;
+            position: absolute;
+       
+            top: 50px;
+            left: 0;
+            width: 100%;
+            /* height: 300px; */
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .link a {
+            margin-left: 30px;
+            
+        }
+
+        .box a {
+            display: block;
+            font-size: smaller;
+            margin: 8px;
+            color: black;
+        }
+    </STYLE>
+</head>
+
+<body>
+    <nav>
+        
+
+        <div class="link-parent">
+
+            <!-- <div class="link">
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+            </div> -->
+
+            <div class="show">
+                <a href="#">Services</a>
+
+                <div class="hide">
+
+                    <div class="box"  >
+                        <a href="#"><b>Accounting Integration</b></a>
+                        <a href="#">QuickBooks</a>
+                        <a href="#">Xero</a>
+                        <a href="#">Wave</a>
+                        <a href="#">MYOB</a>
+                        <a href="#">ClearBooks</a>
+                        <a href="#">FreshBooks</a>
+                        <a href="#">ZohoBooks</a>
+                    </div>
+
+                    <div class="box">
+                        <a href="#"><b>ERP Integration</b></a>
+                        <a href="#">Dynamics 365 Buisness Central</a>
+                        <a href="#">SAP</a>
+                        <a href="#">Oracle Netsuite</a>
+                        <a href="#">Sage</a>
+                        <a href="#">Ms Dynamics 365</a>
+                        <a href="#">Odoo</a>
+                        <a href="#">Acumatica</a>
+                    </div>
+
+
+                    <div class="box">
+                        <a href="#"><b>Ecommerce Integration</b></a>
+                        <a href="#">Shopify</a>
+                        <a href="#">WooCommerce</a>
+                        <a href="#">Mangento 2.X</a>
+                        <a href="#">BigCommerce</a>
+                        <a href="#">Shopware</a>
+                        <a href="#">Linnworks</a>
+                    </div>
+
+
+                    <div class="box">
+                        <a href="#"><b>CRM Integration</b></a>
+                        <a href="#">Salesforce</a>
+                        <a href="#">Keap</a>
+                        <a href="#">HubSPOT</a>
+                        <a href="#">zohoCRM</a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
